@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>平衡轮互动工具</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="side-nav" aria-label="页面导航">
+    <div class="nav-brand">
+      <div class="brand-wheel" aria-hidden="true"><span></span></div>
+      <span>Balance Wheel</span>
+      <strong>平衡轮</strong>
+    </div>
+    <div class="nav-kicker">从看见到行动</div>
+    <a class="active" href="#what" data-view="what"><small>01</small><span>认识平衡轮</span></a>
+    <a href="#meaning" data-view="meaning"><small>02</small><span>看见价值</span></a>
+    <a href="#flow" data-view="flow"><small>03</small><span>掌握路线</span></a>
+    <a href="#scenes" data-view="scenes"><small>04</small><span>选择你的轮</span></a>
+    <a href="#practice" data-view="practice"><small>05</small><span>开始体验</span></a>
+    <div class="nav-progress" aria-label="流程进度">
+      <span></span><span></span><span></span><span></span><span></span>
+      <strong>觉察 · 选择 · 行动</strong>
+    </div>
+  </nav>
+
+  <main class="app">
+    <span id="averageScore" class="sr-only">0.0</span>
+
+    <section id="what" class="info-band module-section active" data-view="what">
+      <div class="section-head what-head">
+        <p class="eyebrow">Balance Wheel</p>
+        <h2>什么是平衡轮</h2>
+        <p>把复杂状态画成一只轮子：看见整体、识别失衡、找到支点，再把觉察落成行动。</p>
+      </div>
+      <div class="wheel-visual" aria-label="平衡轮示意图">
+        <svg viewBox="0 0 220 220" role="img">
+          <circle cx="110" cy="110" r="88" class="ring outer"></circle>
+          <circle cx="110" cy="110" r="66" class="ring"></circle>
+          <circle cx="110" cy="110" r="44" class="ring"></circle>
+          <circle cx="110" cy="110" r="22" class="ring"></circle>
+          <g class="spokes">
+            <line x1="110" y1="22" x2="110" y2="198"></line>
+            <line x1="22" y1="110" x2="198" y2="110"></line>
+            <line x1="48" y1="48" x2="172" y2="172"></line>
+            <line x1="172" y1="48" x2="48" y2="172"></line>
+          </g>
+          <polygon points="110,35 158,62 176,110 145,145 110,162 72,148 54,110 78,78" class="current-shape"></polygon>
+          <circle cx="110" cy="35" r="5"></circle>
+          <circle cx="158" cy="62" r="5"></circle>
+          <circle cx="176" cy="110" r="5"></circle>
+          <circle cx="145" cy="145" r="5"></circle>
+          <circle cx="110" cy="162" r="5"></circle>
+          <circle cx="72" cy="148" r="5"></circle>
+          <circle cx="54" cy="110" r="5"></circle>
+          <circle cx="78" cy="78" r="5"></circle>
+        </svg>
+        <div>
+          <strong>8 个维度，1 张状态地图</strong>
+          <span>形状越不规则，越适合停下来观察：哪里需要修正？哪里能成为支点？</span>
+        </div>
+      </div>
+      <div class="quote-panel">
+        <strong>教练视角</strong>
+        <p>平衡轮不是为了追求每项满分，而是帮助你选择此刻最值得投入的一点。</p>
+      </div>
+      <article class="insight-card"><strong>圆心</strong><span>代表低分、低满意度，提醒我们哪里需要被看见。</span></article>
+      <article class="insight-card"><strong>外圈</strong><span>代表 10 分状态，是期待中的充足、顺畅或理想状态。</span></article>
+      <article class="insight-card"><strong>轮廓</strong><span>把每个评分点连起来，形成一张当前状态地图。</span></article>
+    </section>
+
+    <section id="meaning" class="value-grid module-section" data-view="meaning">
+      <div class="section-head value-head">
+        <p class="eyebrow">Balance Wheel</p>
+        <h2>平衡轮的价值</h2>
+        <p>它不只是一个评分表，而是一个把觉察、选择和行动串起来的教练对话框架。</p>
+      </div>
+      <article>
+        <div class="value-icon see" aria-hidden="true"></div>
+        <h3>看见整体</h3>
+        <p>把抽象感受变成一张图，帮助参与者从局部问题回到整体视角。</p>
+        <span>适合在年度复盘、目标澄清、面谈开场时使用。</span>
+      </article>
+      <article>
+        <div class="value-icon pivot" aria-hidden="true"></div>
+        <h3>找到支点</h3>
+        <p>不只看最低分，也看哪个维度提升后能带动其他维度一起改善。</p>
+        <span>支点通常是低分项、影响面大的项，或当事人最愿意行动的项。</span>
+      </article>
+      <article>
+        <div class="value-icon action" aria-hidden="true"></div>
+        <h3>形成行动</h3>
+        <p>从觉察走向承诺，把目标拆成一周内可以开始的小行动。</p>
+        <span>行动越小、越具体、越有时间点，越容易被跟踪和复盘。</span>
+      </article>
+      <article class="wide-card">
+        <h3>它解决的不是“分数问题”，而是“选择问题”</h3>
+        <p>很多人知道自己有很多事情要改善，但不知道从哪里开始。平衡轮把复杂状态摊开，让大家先承认现状，再选择一个最有杠杆感的突破点。</p>
+      </article>
+      <article class="wide-card">
+        <h3>它适合一对一，也适合小组共创</h3>
+        <p>个人可以用它做自我教练；团队可以用它对齐现状认知；管理者可以用它开启绩效、发展或项目复盘对话。</p>
+      </article>
+    </section>
+
+    <section id="flow" class="flow-section module-section" data-view="flow">
+      <div class="section-head">
+        <p class="eyebrow">Balance Wheel</p>
+        <h2>使用流程</h2>
+      </div>
+      <div class="flow">
+        <div><i aria-hidden="true"></i><strong>1 定目的</strong><span>明确本次平衡轮要解决什么问题。</span></div>
+        <div><i aria-hidden="true"></i><strong>2 列要素</strong><span>围绕场景选出 8 个关键维度。</span></div>
+        <div><i aria-hidden="true"></i><strong>3 评分数</strong><span>对每个维度做 1-10 分评估。</span></div>
+        <div><i aria-hidden="true"></i><strong>4 找支点</strong><span>识别最值得优先突破的维度。</span></div>
+        <div><i aria-hidden="true"></i><strong>5 设目标</strong><span>设定下一阶段想达到的分数。</span></div>
+        <div><i aria-hidden="true"></i><strong>6 定行动</strong><span>写下最小行动、资源和截止时间。</span></div>
+        <div><i aria-hidden="true"></i><strong>7 动态管理</strong><span>定期复盘进度，持续调整轮子。</span></div>
+      </div>
+    </section>
+
+    <section id="scenes" class="scene-section module-section" data-view="scenes">
+      <div class="section-head">
+        <p class="eyebrow">Balance Wheel</p>
+        <h2>选择应用场景</h2>
+        <p>这里提供 6 个常用入口，帮助你快速开始。平衡轮的应用场景远不止这些，进入体验后也可以调整 8 个维度，生成更适合当前议题的版本。</p>
+      </div>
+      <div id="sceneCards" class="scene-cards" aria-label="应用场景"></div>
+    </section>
+
+    <section id="practice" class="practice module-section" data-view="practice">
+      <div class="tool-head">
+        <div>
+          <p class="eyebrow">Balance Wheel</p>
+          <h2>开始体验</h2>
+          <p>按使用流程完成 7 步：定目的、列要素、评分数、找支点、设目标、定行动、动态管理。</p>
+        </div>
+        <div class="actions">
+          <button id="resetBtn" class="icon-button" type="button" title="重置">
+            <span aria-hidden="true">↺</span>
+            <span class="sr-only">重置</span>
+          </button>
+          <button id="printBtn" class="primary-button" type="button">打印 / 另存为 PDF</button>
+        </div>
+      </div>
+
+      <div class="practice-guide">
+        <div><strong>先定主题</strong><span>这次想复盘什么？人生、工作、学习、暑期、团队或会议。</span></div>
+        <div><strong>再看图形</strong><span>评分后观察轮廓，低分和差距会提示支点。</span></div>
+        <div><strong>最后落行动</strong><span>行动要小、具体、有日期，并安排复盘。</span></div>
+      </div>
+
+      <div class="tool-grid">
+        <div class="wheel-panel">
+          <div class="panel-title">
+            <strong>我的平衡轮</strong>
+            <span>拖动右侧评分后，图形会实时更新</span>
+          </div>
+          <canvas id="wheelCanvas" width="760" height="760" aria-label="平衡轮雷达图"></canvas>
+          <div class="legend">
+            <span><i class="current"></i>当前状态</span>
+            <span><i class="target"></i>目标状态</span>
+          </div>
+        </div>
+
+        <div class="controls-panel">
+          <div class="panel-title light">
+            <strong>练习步骤</strong>
+            <span>按顺序完成，也可以随时返回调整</span>
+          </div>
+          <div class="steps" role="tablist" aria-label="练习步骤">
+            <button class="step active" type="button" data-tab="purpose"><small>01</small><span>定目的</span></button>
+            <button class="step" type="button" data-tab="dimensions"><small>02</small><span>列要素</span></button>
+            <button class="step" type="button" data-tab="score"><small>03</small><span>评分数</span></button>
+            <button class="step" type="button" data-tab="pivot"><small>04</small><span>找支点</span></button>
+            <button class="step" type="button" data-tab="goal"><small>05</small><span>设目标</span></button>
+            <button class="step" type="button" data-tab="action"><small>06</small><span>定行动</span></button>
+            <button class="step" type="button" data-tab="track"><small>07</small><span>动态管理</span></button>
+          </div>
+
+          <section id="purposeTab" class="tab-content active" aria-label="定目的">
+            <div class="step-intro"><strong>这一步做什么？</strong><span>先写清楚这次想用平衡轮讨论什么问题。目的越清楚，后面 8 个维度和行动越容易落地。</span></div>
+            <label class="field">
+              <span>本次主题</span>
+              <input id="purposeInput" type="text" placeholder="例如：2026 年度人生平衡轮">
+            </label>
+            <div class="summary-box">
+              <h3>提示</h3>
+              <p>可以从第 4 页选择一个常用场景开始，也可以直接在下一步调整 8 个维度。</p>
+            </div>
+          </section>
+
+          <section id="dimensionsTab" class="tab-content" aria-label="列要素">
+            <div class="step-intro"><strong>这一步做什么？</strong><span>围绕本次主题列出 8 个关键维度。系统先给一组常用维度，方便快速开始；现场讨论时可以直接改名。</span></div>
+            <div id="dimensionEditor" class="dimension-editor"></div>
+          </section>
+
+          <section id="scoreTab" class="tab-content" aria-label="评分">
+            <div class="step-intro"><strong>这一步做什么？</strong><span>给每个维度的当前满意度打分。1 分代表很不满意，10 分代表非常满意。</span></div>
+            <div id="dimensionList" class="dimension-list"></div>
+          </section>
+
+          <section id="pivotTab" class="tab-content" aria-label="找支点">
+            <div class="step-intro"><strong>这一步做什么？</strong><span>先看系统建议的低分项，再结合你的直觉选择最值得优先推动的支点。</span></div>
+            <div class="prompt-box">
+              <h3 id="focusTitle">当前支点</h3>
+              <p id="focusPrompt">完成评分后，这里会显示最值得优先关注的维度和引导问题。</p>
+            </div>
+            <label class="field">
+              <span>我选择的支点</span>
+              <select id="focusArea"></select>
+            </label>
+            <label class="field">
+              <span>我的发现</span>
+              <textarea id="reflection" rows="7" placeholder="写下你为什么选择这个支点，它正在影响哪些维度。"></textarea>
+            </label>
+          </section>
+
+          <section id="goalTab" class="tab-content" aria-label="设目标">
+            <div class="step-intro"><strong>这一步做什么？</strong><span>为每个维度设置下一阶段的目标分，不一定都要到 10 分，关键是可实现。</span></div>
+            <div id="targetList" class="dimension-list"></div>
+          </section>
+
+          <section id="actionTab" class="tab-content" aria-label="定行动">
+            <div class="step-intro"><strong>这一步做什么？</strong><span>把目标变成一周内可以开始的小行动。一个好行动应该具体、可观察、有时间点。</span></div>
+            <label class="field">
+              <span>一个最小行动</span>
+              <textarea id="actionStep" rows="4" placeholder="小到本周真的能开始，例如：每天 22:45 放下手机，连续 5 天。"></textarea>
+            </label>
+            <div id="extraActions" class="extra-actions" aria-label="更多行动项"></div>
+            <button id="addActionBtn" class="add-action-button" type="button">+ 添加行动项</button>
+            <div class="plan-row">
+              <label class="field">
+                <span>完成日期</span>
+                <input id="dueDate" type="date">
+              </label>
+              <label class="field">
+                <span>支持资源</span>
+                <input id="support" type="text" placeholder="伙伴、时间、工具或提醒">
+              </label>
+            </div>
+            <div class="summary-box">
+              <h3>我的行动卡</h3>
+              <p id="planSummary"></p>
+            </div>
+          </section>
+
+          <section id="trackTab" class="tab-content" aria-label="监督跟踪">
+            <div class="step-intro"><strong>这一步做什么？</strong><span>不是机械打卡，而是约定下一次复盘：什么时候看结果、看哪些证据、下一步怎么调整。</span></div>
+            <label class="field">
+              <span>下次复盘日期</span>
+              <input id="reviewDate" type="date">
+            </label>
+            <label class="field">
+              <span>复盘支持者</span>
+              <input id="reviewPartner" type="text" placeholder="自己、教练、伙伴、主管或小组">
+            </label>
+            <label class="field">
+              <span>复盘时看什么</span>
+              <textarea id="trackingNote" rows="6" placeholder="例如：行动是否完成？支点分数是否变化？带动了哪些维度？下一轮要继续、调整还是停止？"></textarea>
+            </label>
+          </section>
+
+          <div class="step-actions">
+            <button id="prevStep" class="secondary-button" type="button">上一步</button>
+            <button id="nextStep" class="primary-button" type="button">下一步</button>
+          </div>
+        </div>
+      </div>
+
+      <section id="completionPanel" class="completion-panel" hidden aria-live="polite">
+        <div class="completion-head">
+          <div>
+            <p class="eyebrow">Balance Wheel</p>
+            <h3>本次平衡轮成果卡</h3>
+            <p>这张卡会汇总你的主题、支点、目标、行动和复盘安排，可直接打印或保存为 PDF。</p>
+          </div>
+          <button id="exportResultBtn" class="primary-button" type="button">打印 / 另存为 PDF</button>
+        </div>
+        <div id="completionContent" class="completion-content"></div>
+        <p id="exportStatus" class="export-status" role="status"></p>
+      </section>
+    </section>
+  </main>
+
+  <template id="dimensionTemplate">
+    <article class="dimension-card">
+      <div class="dimension-head">
+        <label class="dimension-name"></label>
+        <output class="score-badge"></output>
+      </div>
+      <input class="score-slider" type="range" min="1" max="10" value="5">
+      <div class="scale"><span>1</span><span>10</span></div>
+    </article>
+  </template>
+
+  <script src="script.js?v=20260613-final"></script>
+</body>
+</html>
